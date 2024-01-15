@@ -4,22 +4,11 @@
 
 body {
     --background-light: #FFF;
-    --color-drop-light: #111827;
-    --color-btn-light: #374151;
-    --color-label-light: #2B283A;
+    --color-light: #111827;
     --border-color-light: #D1D5DB;
-    --btn-background-light: #FFF;
     --background: var(--background-light);
-
-/*    --background-color-dark: #1F2937;
-    --background-color: var(--background-color-light);
-
-    --background-color-dark: #1F2937;
-    --background-color: var(--background-color-light);
-    --btn-color-light: #CCC;
-    --btn-color-light: #CCC;
-    --btn-color-light: #CCC;*/
-
+    --color: var(--color-light);
+    --border-color: var(--border-color-light);
     font-family: 'Inter', sans-serif;
     min-height: 100vh;
     display: flex;
@@ -52,7 +41,7 @@ select {
     height: 2.5em;
     font-family: inherit;
     font-size: 1rem;
-    color: var(--color-drop-light);
+    color: var(--color);
     background: var(--background);
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20' fill='none'%3E%3Cpath d='M17 7L10 14L3 7' stroke='%239CA3AF' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
     background-position: right 1em center;
@@ -62,7 +51,7 @@ select {
     appearance: none;
     padding: 0.625em 0.75em;
     border-radius: 6px;
-    border: 1px solid var(--border-color-light);
+    border: 1px solid var(--border-color);
     flex-grow: 1;
 }
 
@@ -72,7 +61,7 @@ button {
     font-size: 0.75rem;
     font-weight: 500;
     padding: 0.875em 1em;
-    border: 1px solid var(--border-color-light);
+    border: 1px solid var(--border-color);
     border-radius: 4px;
     background: var(--background);
     cursor: pointer;
@@ -89,15 +78,11 @@ button {
     display: flex;
     flex-direction: column;
     text-align: center;
+    cursor: copy;
 }
 
 .color-panel {
-    background: #CC3;
     flex-grow: 1;
-}
-
-.color-col:nth-child(even) > .color-panel {
-    background: #C23;
 }
 
 .color-label {
@@ -105,5 +90,27 @@ button {
     font-weight: 500;
     padding: 1.5em;
     background: var(--background);
-    color: var(--color-drop-light);
+    color: var(--color);
+}
+
+.notify {
+    position: fixed;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 10px;
+    width: 250px;
+    height: 3em;
+    background: var(--background);
+    color: var(--color);
+    box-shadow: 0px 0px 11px rgba(0, 0, 0, 0.30);
+    display: block;
+    padding: 1em;
+    text-align: center;
+}
+
+.hidden {
+    display: none;
 }
