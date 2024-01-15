@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/normalize.css">
+        <link rel="stylesheet" href="style.css">
+        <title>Color Picker</title>
+    </head>
+    <body>
+        <header>
+            <div class="flex container">
+                <input type="color" id="color-input">
+                <select name="scheme" id="color-scheme-input">
+                    <option value="Monochrome">Monochrome</option>
+                    <option value="Monochrome-dark">Monochrome-dark</option>
+                    <option value="Monochrome-light">Monochrome-light</option>
+                    <option value="Analogic">Analogic</option>
+                    <option value="Complement">Complement</option>
+                    <option value="Analogic-complement">Analogic-complement</option>
+                    <option value="Triad">Triad</option>
+                </select>
+                <button id="color-scheme-btn">Get color scheme</button>
+            </div>
+        </header>
+        <main class="color-output">
+            <div class="color-col">
+                <div class="color-panel"></div>
+                <div class="color-label">#FFFC33</div>
+            </div>
+            <div class="color-col">
+                <div class="color-panel"></div>
+                <div class="color-label">#FFFC33</div>
+            </div>
+            <div class="color-col">
+                <div class="color-panel"></div>
+                <div class="color-label">#FFFC33</div>
+            </div>
+            <div class="color-col">
+                <div class="color-panel"></div>
+                <div class="color-label">#FFFC33</div>
+            </div>
+            <div class="color-col">
+                <div class="color-panel"></div>
+                <div class="color-label">#FFFC33</div>
+            </div>
+            <div class="color-col">
+                <div class="color-panel"></div>
+                <div class="color-label">#FFFC33</div>
+            </div>
+        </main>
+    </body>
+</html>

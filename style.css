@@ -1,0 +1,109 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    --background-light: #FFF;
+    --color-drop-light: #111827;
+    --color-btn-light: #374151;
+    --color-label-light: #2B283A;
+    --border-color-light: #D1D5DB;
+    --btn-background-light: #FFF;
+    --background: var(--background-light);
+
+/*    --background-color-dark: #1F2937;
+    --background-color: var(--background-color-light);
+
+    --background-color-dark: #1F2937;
+    --background-color: var(--background-color-light);
+    --btn-color-light: #CCC;
+    --btn-color-light: #CCC;
+    --btn-color-light: #CCC;*/
+
+    font-family: 'Inter', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background: var(--background);
+    box-shadow: 0px 4px 11px rgba(0, 0, 0, 0.15);
+    padding: 1.5em 1em;
+    z-index: 1;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    max-width: 640px;
+    margin: 0 auto;
+    gap: 0.75em;
+}
+
+input[type="color"] {
+    display: block;
+    height: 2.5em;
+    flex-grow: 0;
+}
+
+select {
+    display: block;
+    height: 2.5em;
+    font-family: inherit;
+    font-size: 1rem;
+    color: var(--color-drop-light);
+    background: var(--background);
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20' fill='none'%3E%3Cpath d='M17 7L10 14L3 7' stroke='%239CA3AF' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+    background-position: right 1em center;
+    background-repeat: no-repeat;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    padding: 0.625em 0.75em;
+    border-radius: 6px;
+    border: 1px solid var(--border-color-light);
+    flex-grow: 1;
+}
+
+button {
+    flex-grow: 0;
+    font-family: inherit;
+    font-size: 0.75rem;
+    font-weight: 500;
+    padding: 0.875em 1em;
+    border: 1px solid var(--border-color-light);
+    border-radius: 4px;
+    background: var(--background);
+    cursor: pointer;
+}
+
+.color-output {
+    flex-grow: 1;
+    display: flex;
+    width: 100vw;
+}
+
+.color-col {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.color-panel {
+    background: #CC3;
+    flex-grow: 1;
+}
+
+.color-col:nth-child(even) > .color-panel {
+    background: #C23;
+}
+
+.color-label {
+    font-size: 0.75rem;
+    font-weight: 500;
+    padding: 1.5em;
+    background: var(--background);
+    color: var(--color-drop-light);
+}
